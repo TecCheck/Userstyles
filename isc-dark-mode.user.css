@@ -4,6 +4,7 @@
 @version        1.0.0
 @description    Dark mode for DLRG ISC
 @author         TecCheck
+@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/isc-dark-mode.user.css
 
 @var text border_radius_small "Small Border Radius" 4px
 @var text border_radius_medium "Medium Border Radius" 8px
