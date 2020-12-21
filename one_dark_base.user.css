@@ -1,0 +1,35 @@
+/* ==UserStyle==
+@name         One Dark Base Style
+@namespace    .+
+@version      1.0.0
+@author       TecCheck
+@homepageURL  https://github.com/TecCheck/Userstyles
+
+@var color accentColor "Accent Color" #98c379
+@var color backgroundColor "Background Color" #282c34
+@var color darkBackgroundColor "Dark Background Color" #21252b
+@var color textColor "Text Color" #dcdfe4
+
+@var color red "Red" #e06c75
+@var color green "Green" #98c379
+@var color yellow "Yellow" #e5c07b
+@var color blue "Blue" #61afef
+@var color magenta "Magenta" #c678dd
+@var color cyan "Cyan" #56b6c2
+==/UserStyle== */
+
+@-moz-document regexp(".+") {
+    :root {
+        --color_text: var(--textColor);
+        --color_background: var(--backgroundColor);
+        --color_background_dark: var(--darkBackgroundColor);
+        --color_accent: var(--accentColor);
+        
+        --color_red: var(--red);
+        --color_green: var(--green);
+        --color_yellow: var(--yellow);
+        --color_blue: var(--blue);
+        --color_magenta: var(--magenta);
+        --color_cyan: var(--cyan);
+    }
+}
