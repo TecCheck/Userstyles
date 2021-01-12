@@ -7,8 +7,60 @@
 @homepageURL  https://raw.githubusercontent.com/TecCheck/Userstyles/
 @updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/moodle_one_dark.user.css
 ==/UserStyle== */
-
 @-moz-document domain("moodle.gsravensburg.de") {
+    /* BIG RESET */
+    .aabtn.focus,
+    .btn-link.focus,
+    .nav-link.focus,
+    .atto_link_button.focus,
+    [role="button"].focus,
+    .list-group-item-action.focus,
+    input[type="checkbox"].focus,
+    input[type="radio"].focus,
+    input[type="file"].focus,
+    input[type="image"].focus,
+    .sr-only-focusable.focus,
+    a.dropdown-toggle.focus,
+    .modal-dialog[tabindex="0"].focus,
+    .moodle-dialogue-base .closebutton.focus,
+    button.close.focus,
+    .form-autocomplete-selection.focus,
+    .aabtn:focus,
+    .btn-link:focus,
+    .nav-link:focus,
+    .atto_link_button:focus,
+    [role="button"]:focus,
+    .list-group-item-action:focus,
+    input[type="checkbox"]:focus,
+    input[type="radio"]:focus,
+    input[type="file"]:focus,
+    input[type="image"]:focus,
+    .sr-only-focusable:focus,
+    a.dropdown-toggle:focus,
+    .modal-dialog[tabindex="0"]:focus,
+    .moodle-dialogue-base .closebutton:focus,
+    button.close:focus,
+    .form-autocomplete-selection:focus {
+        box-shadow: none;
+    }
+
+    .aalink.focus,
+    #page-footer a:not([class]).focus,
+    .arrow_link.focus,
+    a:not([class]).focus,
+    .activityinstance > a.focus,
+    .aalink:focus,
+    #page-footer a:not([class]):focus,
+    .arrow_link:focus,
+    a:not([class]):focus,
+    .activityinstance > a:focus {
+        outline: none;
+        color: unset;
+        background-color: unset;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
     body {
         background-color: var(--backgroundColor);
         color: var(--textColor);
@@ -17,7 +69,7 @@
     a {
         color: var(--accentColor);
     }
-    
+
     a:hover {
         color: var(--accentColor);
     }
@@ -40,12 +92,61 @@
         border: none;
     }
 
+    .btn:focus {
+        box-shadow: none;
+    }
+
+    .btn-primary {
+        background: var(--color_accent);
+        border: none;
+        border-radius: 4px;
+    }
+
+    .btn-primary.disabled,
+    .btn-primary:disabled {
+        background: var(--color_accent);
+        border: none;
+        border-radius: 4px;
+    }
+
+    .btn-link {
+        color: var(--color_accent);
+    }
+
+    .form-control {
+        background: var(--color_background);
+        color: var(--color_text);
+        border: none;
+        border-radius: 4px;
+    }
+
+    .form-control:focus {
+        background: var(--color_background);
+        color: var(--color_text);
+        -webkit-box-shadow: 0 0 0 .2rem var(--color_accent);
+        box-shadow: 0 0 0 .2rem var(--color_accent);
+    }
+
     .icon {
         color: var(--textColor);
     }
 
     .card {
-        background-color: var(--darkBackgroundColor);
+        background-color: var(--color_background_dark);
+        border-radius: 8px;
+        border: none;
+    }
+
+    .card .dashboard-card {
+        border-radius: 4px;
+    }
+
+    .card .dashboard-card a div {
+        border-radius: 4px 4px 0 0;
+    }
+
+    .card .dashboard-card .dashboard-card-footer {
+        border-radius: 0 0 4px 4px;
     }
 
     #page-wrapper #page {
@@ -54,13 +155,15 @@
     }
 
     #region-main {
-        background-color: var(--backgroundColor);
+        background-color: var(--darkBackgroundColor);
+        border-radius: 8px;
+        border: none;
     }
 
     .calendar_event_site {
         background-color: var(--color_green);
     }
-    
+
     .calendar_event_category {
         background-color: var(--color_magenta);
     }
@@ -68,57 +171,76 @@
     .calendar_event_course {
         background-color: var(--color_red);
     }
-    
-    .calendar_event_group{
+
+    .calendar_event_group {
         background-color: var(--color_yellow);
     }
-    
+
     .calendar_event_user {
         background-color: var(--color_blue);
     }
-    
+
     .block .minicalendar td a {
         color: var(--textColor);
     }
-    
+
     .navbar-light .navbar-nav .nav-link {
         color: var(--textColor);
     }
-    
+
     .navbar-light .navbar-nav .nav-link:hover {
         color: var(--textColor);
     }
-    
-    .navbar-light .navbar-brand:hover, .navbar-light .navbar-brand:focus {
+
+    .navbar-light .navbar-brand:hover,
+    .navbar-light .navbar-brand:focus {
         color: var(--textColor);
     }
-    
+
     [data-region="drawer"] {
         background-color: var(--backgroundColor);
     }
-    
+
     .list-group-item {
         background-color: var(--backgroundColor);
         color: var(--textColor);
     }
-    
+
     .list-group-item:hover {
         background-color: var(--darkBackgroundColor);
         color: var(--textColor);
     }
-    
+
     .list-group-item.active {
         background-color: var(--accentColor);
-
     }
-    
-    .popover-region-container{
+
+    .popover-region-container {
         background-color: var(--darkBackgroundColor);
         border: none;
     }
-    
+
     .popover-region-footer-container {
         background-color: var(--darkBackgroundColor);
         border: none;
+    }
+
+    .alert-danger {
+        background-color: var(--color_red);
+        /*color: var(--color_text);*/
+    }
+
+    .text-info {
+        color: var(--color_blue) !important;
+    }
+
+    .course-content ul li.section.main {
+        border: none;
+        border-radius: 8px;
+        background: var(--color_background);
+    }
+
+    #page-footer {
+        background: var(--color_background) !important;
     }
 }
