@@ -2,7 +2,7 @@
 @name         Spotify One Dark
 @description  One Dark color for Spotify Web
 @namespace    open.spotify.com
-@version      0.3.0
+@version      0.3.1
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @supportURL   https://github.com/TecCheck/Userstyles
@@ -48,7 +48,7 @@
     }
     
     /* ## Selected Item */
-    .d1c9699572913ee01b0280946ab1f470-scss {
+    ._clplXKRPuAbAoCUarH0 {
         background: var(--color_background_dark);
     }
     
@@ -63,7 +63,7 @@
     }
 
     /* ## App Download Button */
-    .i0XB7255K_4QFLJsSGc_ {
+    .Tf1tCS2eGCCT5FNgZADx.XBLHOk84uYNA6jOAMgn9 {
         display: none;
     }
     
