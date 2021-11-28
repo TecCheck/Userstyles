@@ -1,83 +1,86 @@
 /* ==UserStyle==
-@name           ISC dark mode
-@namespace      https://github.com/TecCheck/Userstyles
-@version        1.0.0
-@description    Dark mode for DLRG ISC
-@author         TecCheck
-@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/isc-dark-mode.user.css
+@name         Modular ISC
+@description  Modular theme for DLRG ISC
+@namespace    dlrg.net
+@version      1.0.0
+@author       TecCheck
+@homepageURL  https://github.com/TecCheck/Userstyles
+@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/sites/isc.user.css
+@license      unlicense
+@preprocessor stylus
 
 @var text border_radius_small "Small Border Radius" 4px
 @var text border_radius_medium "Medium Border Radius" 8px
 ==/UserStyle== */
 
 @-moz-document domain("dlrg.net") {
-    
+
     body {
         background: var(--color_background);
         color: var(--color_text);
     }
- 
+
     .apps .apps_card {
         background: var(--color_background_dark);
         border-radius: var(--border_radius_medium);
     }
-    
+
     .apps .apps_card:hover {
         background: var(--color_background_hover);
     }
-    
+
     .bg-light {
         background-color: var(--color_background_dark) !important;
     }
-    
+
     .sidebar {
         border: none;
     }
-    
+
     .sidebar .nav-inner .nav-link {
         font-weight: unset;
     }
-    
+
     .table {
         color: unset;
     }
-    
+
     .table-hover tbody tr:hover {
         color: unset;
         background: var(--color_background_hover);
     }
-    
+
     .card {
         background-color: unset;
     }
-    
+
     .input-group {
         border-radius: var(--border_radius_small);
         background: var(--color_background_dark);
     }
-    
+
     .input-group > .form-control {
         border-radius: unset;
     }
-    
+
     .input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child)  {
         border-radius: unset;
     }
-    
+
     .input-group-sm > .custom-select, .input-group-sm > .form-control:not(textarea) {
         border-radius: unset;
     }
-    
+
     .input-group-text {
         color: var(--color_text);
         background: var(--color_background_dark);
         border: none;
     }
-    
+
     .input-group .form-control {
         background: none;
     }
-    
+
     .form-control {
         background: var(--color_background_dark);
         color: var(--color_text);
@@ -86,26 +89,26 @@
         border-right: none;
         border-radius: var(--border_radius_small);
     }
-    
+
     .form-control:not(:required) {
         border: none;
     }
-    
+
     .form-control:focus {
         background: var(--color_background_dark);
         color: unset;
     }
-    
+
     .btn-group {
         background: var(--color_background_dark);
     }
-    
+
     .btn-secondary {
         background: none;
         border-color: var(--color_border);
         color: var(--color_text);
     }
-    
+
     .btn-secondary:hover {
         color: unset;
         background-color: var(--color_background_hover);

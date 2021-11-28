@@ -1,62 +1,61 @@
 /* ==UserStyle==
-@name         Spotify One Dark
-@description  One Dark color for Spotify Web
+@name         Modular Spotify
+@description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      0.3.1
+@version      0.3.2
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
-@supportURL   https://github.com/TecCheck/Userstyles
-@updateURL    https://github.com/TecCheck/Userstyles/raw/main/spotify_one_dark.user.css
+@updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
 @license      unlicense
 @preprocessor stylus
 ==/UserStyle== */
 
 @-moz-document domain("open.spotify.com") {
-    
+
     /* # Nav bar */
     .Root__nav-bar {
         background: var(--color_background);
     }
-    
+
     /* ## Spotify Logo */
     .logo .spotify-logo--text {
         color: var(--color_accent);
     }
-    
+
     /* ## Add Playlist Button Icon */
     ._28160026e8be14060f22ead8e2af36f5-scss {
         border-radius: 50%;
     }
-    
+
     /* ## Favourites Button Icon */
     ._6b5bc370e9834a4932f57284a96a0748-scss {
         border-radius: 50%;
     }
-    
+
     /* ## Que Button */
     .control-button--active:not(.control-button--disabled):focus, .control-button--active:not(.control-button--disabled):hover {
         color: var(--color_accent);
     }
-    
+
     /* ## Control Buttons */
     .control-button--active {
         color: var(--color_accent);
     }
-    
+
     .control-button--active-dot::after {
         background: var(--color_accent);
     }
-    
+
     /* ## Selected Item */
     ._clplXKRPuAbAoCUarH0 {
         background: var(--color_background_dark);
     }
-    
+
     /* ## Divider */
     ._752cd60a82eaf0dd41c84e90b6479cbb-scss {
         background: var(--color_text);
     }
-    
+
     /* ## Shadow */
     ._7b6273541d969069bb18c4fcae4120e7-scss {
         display: none;
@@ -66,52 +65,52 @@
     .Tf1tCS2eGCCT5FNgZADx.XBLHOk84uYNA6jOAMgn9 {
         display: none;
     }
-    
-    
+
+
     /* # Now playing bar */
     .Root__now-playing-bar, ._82a78ff58d3fcba0cb9b8083fe6dd05c-scss {
         background: var(--color_background_dark);
         border: none;
     }
-    
+
     /* ## Background */
     .gqeP9Y0_y6DLm4CD_m3Q {
         background: none;
         border-top: none;
     }
-    
+
     /* ## Heart Button */
     .a65d8d62fe56eed3e660b937a9be8a93-scss, .a65d8d62fe56eed3e660b937a9be8a93-scss:focus, .a65d8d62fe56eed3e660b937a9be8a93-scss:hover {
         color: var(--color_accent);
     }
-    
+
     /* ## Shuffle Button */
     .OSNOtcFz_LbegO1zggsb.K50_6MSlPqlOtlD7u5sB {
         color: var(--color_accent);
     }
-    
+
     /* ### hover */
     .OSNOtcFz_LbegO1zggsb.K50_6MSlPqlOtlD7u5sB:not([disabled]):focus, .OSNOtcFz_LbegO1zggsb.K50_6MSlPqlOtlD7u5sB:not([disabled]):hover {
         color: var(--color_accent);
     }
-    
+
     /* ## Repeat Button */
     .__1BGhJvHnvqYTPyG074.RuZx8jI6RbF6b0o9FcKW {
         color: var(--color_accent);
     }
-    
+
     /* ### hover */
     .__1BGhJvHnvqYTPyG074.RuZx8jI6RbF6b0o9FcKW:not([disabled]):focus, .__1BGhJvHnvqYTPyG074.RuZx8jI6RbF6b0o9FcKW:not([disabled]):hover {
         color: var(--color_accent);
     }
-    
+
     /* ## Progress bar */
     .lRNLjBiX_H7SPYbkJKLp {
         --bg-color: #ffffff11;
         --fg-color: #b3b3b3;
         --is-active-fg-color: var(--color_accent);
     }
-    
+
     /* # Main View */
     .Root__main-view {
         background: var(--color_background);
@@ -123,12 +122,12 @@
     .euOnte9wvOF0D_SGxEZ9 {
         background-image: linear-gradient(rgba(0, 0, 0, 0.6), var(--color_background));
     }
-    
+
     /* ### First Section Cards */
     .KL469QQzoRZLOmKomNzk .z_dqOOSiQjEgjJbtW1qW {
         box-shadow: none;
     }
-    
+
     /* ### Section Layout */
     .Vg_wqJ9OwkZl65Rc_iyX {
         padding: 16px;
@@ -138,39 +137,39 @@
     .JasY66pzI0J7ajrnSLL9 {
         margin: 0 16px;
     }
-    
+
     /* ### Section bodies */
     .Vg_wqJ9OwkZl65Rc_iyX {
         padding: 8px;
     }
-    
+
     /* ### Cards */
     .OALAQFKvC7XQOVYpklB4 {
         border-radius: 16px;
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
-    
+
     .OALAQFKvC7XQOVYpklB4 {
         border-radius: 16px;
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
-    
+
     /* #### hover */
     .OALAQFKvC7XQOVYpklB4:hover {
         background: var(--color_background_dark);
     }
-    
+
     .OALAQFKvC7XQOVYpklB4:hover {
         background: var(--color_background_dark);
     }
-    
+
     /* ### Card Image */
     ._2ce7a4a879bab3a4f4543c870c6d79fd-scss {
         /*border-radius: 16px*/
     }
-    
+
     /* ## Playlist View */
 
     /* ### Playlist Background */
@@ -182,49 +181,49 @@
     .iYoKwYJwszPZXYQCZQ4s {
         background-image: linear-gradient(rgba(0,0,0,.5), var(--color_background));
     }
-    
+
     /* ### Table header */
     .g9n_9K5pFI3B_JuDI_hS.LcjM521yr5D14A54HbQl {
         background: var(--color_background_dark);
     }
-    
+
     /* ### Song row */
     ._OpqIZJH2IqpNqAS9iJ7 {
         border-radius: 8px;
     }
-    
+
     /* ### Playing animation */
     .ax_46rB4EOK3hF__KEMO img {
         filter: saturate(0.4) hue-rotate(-40deg);
     }
-    
+
     /* ### Playing title */
     ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv ._gvEBguxvbSruOQCkWrz, ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv .ax_46rB4EOK3hF__KEMO {
         color: var(--color_accent);
     }
-    
+
     /* #### hover */
     ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv:hover ._gvEBguxvbSruOQCkWrz, ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv:hover .ax_46rB4EOK3hF__KEMO {
         color: var(--color_accent);
     }
-    
+
     /* ## Artist View */
-    
+
     /* ### Background */
     .ojLwFoBNBM6cW7_RpeAN{
         background: var(--color_background);
     }
-    
+
     /* ### Top Gradient */
     .We1fExPHxLIRmV0rZGNo {
         background-image: linear-gradient(var(--color_background), var(--color_background));
     }
-    
+
     /* # Top bar */
     .fynR25MOeILQ7mCZ8247 {
         background: var(--color_background_dark) !important;
     }
-    
+
     /* ## Background Overlay */
     .JBEYL0L5KiIeKcmT3gNp {
         background: none
@@ -234,7 +233,7 @@
     .jn05jgnCWyQjLZKqyKFa._LL_A9TkcmSEuHntj_bw {
         background-color: var(--color_accent);
     }
-    
+
     /* ## Upgrade Button */
     .GGdmQ1RUtuGP7ClED7uf {
         display: none;

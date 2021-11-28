@@ -1,10 +1,13 @@
 /* ==UserStyle==
-@name         One Dark Base Style
+@name         One Half Dark base style
+@description  One Half Dark colors for my modular userstyles (based on https://github.com/sonph/onehalf/)
 @namespace    .+
 @version      1.0.1
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
-@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/one_dark_base.user.css
+@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/base/one_half_dark.user.css
+@license      unlicense
+@preprocessor stylus
 
 @var color accentColor "Accent Color" #98c379
 @var color backgroundColor "Background Color" #282c34
@@ -25,7 +28,7 @@
         --color_background: var(--backgroundColor);
         --color_background_dark: var(--darkBackgroundColor);
         --color_accent: var(--accentColor);
-        
+
         --color_red: var(--red);
         --color_green: var(--green);
         --color_yellow: var(--yellow);
