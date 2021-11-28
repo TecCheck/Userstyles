@@ -7,7 +7,6 @@
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
 @license      unlicense
-@preprocessor stylus
 ==/UserStyle== */
 
 @-moz-document domain("open.spotify.com") {

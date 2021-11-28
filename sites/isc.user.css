@@ -7,7 +7,6 @@
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/sites/isc.user.css
 @license      unlicense
-@preprocessor stylus
 
 @var text border_radius_small "Small Border Radius" 4px
 @var text border_radius_medium "Medium Border Radius" 8px

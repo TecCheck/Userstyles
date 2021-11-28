@@ -7,7 +7,6 @@
 @homepageURL  https://raw.githubusercontent.com/TecCheck/Userstyles/
 @updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/sites/moodle.user.css
 @license      unlicense
-@preprocessor stylus
 ==/UserStyle== */
 
 @-moz-document domain("moodle.gsravensburg.de") {
