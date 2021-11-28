@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      0.3.2
+@version      1.0.0
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -23,12 +23,12 @@
     }
 
     /* ## Add Playlist Button Icon */
-    ._28160026e8be14060f22ead8e2af36f5-scss {
+    .qQjVLTor_n_F9JTk0_5i {
         border-radius: 50%;
     }
 
     /* ## Favourites Button Icon */
-    ._6b5bc370e9834a4932f57284a96a0748-scss {
+    .U1Yw5UfcZ10iovn7gfK0 {
         border-radius: 50%;
     }
 
@@ -47,22 +47,22 @@
     }
 
     /* ## Selected Item */
-    ._clplXKRPuAbAoCUarH0 {
+    .Mx7aus4bRGbU9vPpnDHj {
         background: var(--color_background_dark);
     }
 
     /* ## Divider */
-    ._752cd60a82eaf0dd41c84e90b6479cbb-scss {
-        background: var(--color_text);
+    .Ygv7yuBKKU_w3MFCvNXr {
+        display: none;
     }
 
     /* ## Shadow */
-    ._7b6273541d969069bb18c4fcae4120e7-scss {
+    .kYBlAcRblnjQ6kKW4JCy {
         display: none;
     }
 
     /* ## App Download Button */
-    .Tf1tCS2eGCCT5FNgZADx.XBLHOk84uYNA6jOAMgn9 {
+    ._5fRQsy_dn_0u38wC6Sb.bBxxnUCgRcYCaPw1sLYI {
         display: none;
     }
 
@@ -73,8 +73,13 @@
         border: none;
     }
 
+    /* ## Title Shadows */
+    ._mSbAWxlXgc2ONtpnuXQ::before, ._mSbAWxlXgc2ONtpnuXQ::after {
+        background: none;
+    }
+
     /* ## Background */
-    .gqeP9Y0_y6DLm4CD_m3Q {
+    .O6evDj2xd8mSlS2qiPiG {
         background: none;
         border-top: none;
     }
@@ -105,7 +110,7 @@
     }
 
     /* ## Progress bar */
-    .lRNLjBiX_H7SPYbkJKLp {
+    .nUQLDnMZ4D_pTkaeowQD {
         --bg-color: #ffffff11;
         --fg-color: #b3b3b3;
         --is-active-fg-color: var(--color_accent);
@@ -119,49 +124,71 @@
     /* ## Home View */
 
     /* ### Top Gradient */
-    .euOnte9wvOF0D_SGxEZ9 {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.6), var(--color_background));
+    ._ZhbiHuTGHCAQ_asJSw9 {
+        display: none;
     }
 
-    /* ### First Section Cards */
-    .KL469QQzoRZLOmKomNzk .z_dqOOSiQjEgjJbtW1qW {
+    /* ### Sections Container */
+    .wFzewhu_BtILxlb2hsZ5 {
+        padding: 0;
+        grid-gap: 0px;
+    }
+
+    /* ### Top Section Header */
+    .KjREAf4amsU7qu_xBMFI {
+        margin: 24px 32px 0px 32px;
+    }
+
+    /* ### Top Section Layout */
+    .WR_hhqOgNl2oxWjFP6Ml {
+        padding: 0px;
+    }
+
+    /* ### Top Section Cards */
+    .B0VIs50K6LXh5MDmmmJs .Uj0V012luMKoahlB4XpM {
+        background: var(--color_background_dark);
+        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+    }
+
+    .B0VIs50K6LXh5MDmmmJs .icV9eS36uZs9fhQmUujh {
         box-shadow: none;
+        -webkit-box-shadow: none;
     }
 
     /* ### Section Layout */
-    .Vg_wqJ9OwkZl65Rc_iyX {
-        padding: 16px;
+    .fA2cdlPjNZcA7PoilWIY {
+        padding: 0px;
     }
 
     /* ### Section headers */
-    .JasY66pzI0J7ajrnSLL9 {
-        margin: 0 16px;
+    .RzpZ0LkZ0jXpxHUfv4kk .KjREAf4amsU7qu_xBMFI {
+        margin: 0px 32px;
     }
 
     /* ### Section bodies */
-    .Vg_wqJ9OwkZl65Rc_iyX {
-        padding: 8px;
+    .QNIdF86JU_1vh07jXsY2 {
+        padding: 16px 32px 24px 32px;
     }
 
     /* ### Cards */
-    .OALAQFKvC7XQOVYpklB4 {
+    .YWQ6MaodStrAvAMCg1wx {
         border-radius: 16px;
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
 
-    .OALAQFKvC7XQOVYpklB4 {
+    .Z1sHXP1EI_v36FCALBRd {
         border-radius: 16px;
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
 
     /* #### hover */
-    .OALAQFKvC7XQOVYpklB4:hover {
+    .YWQ6MaodStrAvAMCg1wx:hover {
         background: var(--color_background_dark);
     }
 
-    .OALAQFKvC7XQOVYpklB4:hover {
+    .Z1sHXP1EI_v36FCALBRd:hover {
         background: var(--color_background_dark);
     }
 
@@ -173,17 +200,17 @@
     /* ## Playlist View */
 
     /* ### Playlist Background */
-    .I1cppg1eJlgG6FCdhjO3 {
+    ._5wXWalxnOyFQX7uHu_j {
         background: var(--color_background);
     }
 
     /* ### Top Gradient */
-    .iYoKwYJwszPZXYQCZQ4s {
+    ._XX7ZgHsEhiQ3gO0kz5Q {
         background-image: linear-gradient(rgba(0,0,0,.5), var(--color_background));
     }
 
     /* ### Table header */
-    .g9n_9K5pFI3B_JuDI_hS.LcjM521yr5D14A54HbQl {
+    ._jtsyLN4SfPrV5dZONPP.uwzZYE9AYS0OMBzvAopr {
         background: var(--color_background_dark);
     }
 
@@ -193,17 +220,17 @@
     }
 
     /* ### Playing animation */
-    .ax_46rB4EOK3hF__KEMO img {
+    img.T3fCigGOfGm14iWbSHgX {
         filter: saturate(0.4) hue-rotate(-40deg);
     }
 
     /* ### Playing title */
-    ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv ._gvEBguxvbSruOQCkWrz, ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv .ax_46rB4EOK3hF__KEMO {
+    ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ .eyyspMJ_K_t8mHpLP_kP, ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ .zM1OMw7zDqUcaPz7XCa3 {
         color: var(--color_accent);
     }
 
     /* #### hover */
-    ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv:hover ._gvEBguxvbSruOQCkWrz, ._OpqIZJH2IqpNqAS9iJ7.SzCNXJJQz7BiDOO0B2Xv:hover .ax_46rB4EOK3hF__KEMO {
+    ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ:hover .eyyspMJ_K_t8mHpLP_kP, ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ:hover .zM1OMw7zDqUcaPz7XCa3 {
         color: var(--color_accent);
     }
 
@@ -220,22 +247,22 @@
     }
 
     /* # Top bar */
-    .fynR25MOeILQ7mCZ8247 {
+    .Root__top-bar {
         background: var(--color_background_dark) !important;
     }
 
     /* ## Background Overlay */
-    .JBEYL0L5KiIeKcmT3gNp {
-        background: none
+    .Hn_m1H5t0xMhZa46UHuC {
+        display: none;
     }
 
     /* ## Play Button */
-    .jn05jgnCWyQjLZKqyKFa._LL_A9TkcmSEuHntj_bw {
+    ._47lzH_9ZSVGM4UUdX90.tBo7WbUk9fgBuWpnsy0_ {
         background-color: var(--color_accent);
     }
 
     /* ## Upgrade Button */
-    .GGdmQ1RUtuGP7ClED7uf {
+    .lilyiAOPw1BD7wToymZZ {
         display: none;
     }
 }
