@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name         One Half Darker base style
+@description  One Half Darker colors for my modular userstyles (based on https://github.com/sonph/onehalf/)
+@namespace    .+
+@version      1.0.0
+@author       TecCheck
+@homepageURL  https://github.com/TecCheck/Userstyles
+@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/base/one_half_darker.user.css
+@license      unlicense
+@var color accentColor "Accent Color" #98c379
+@var color backgroundColor "Background Color" #23272e
+@var color darkBackgroundColor "Dark Background Color" #1e2227
+@var color textColor "Text Color" #dcdfe4
+@var color red "Red" #e06c75
+@var color green "Green" #98c379
+@var color yellow "Yellow" #e5c07b
+@var color blue "Blue" #61afef
+@var color magenta "Magenta" #c678dd
+@var color cyan "Cyan" #56b6c2
+==/UserStyle== */
+
+@-moz-document regexp(".+") {
+    :root {
+        --color_text: var(--textColor);
+        --color_background: var(--backgroundColor);
+        --color_background_dark: var(--darkBackgroundColor);
+        --color_accent: var(--accentColor);
+
+        --color_red: var(--red);
+        --color_green: var(--green);
+        --color_yellow: var(--yellow);
+        --color_blue: var(--blue);
+        --color_magenta: var(--magenta);
+        --color_cyan: var(--cyan);
+    }
+}
