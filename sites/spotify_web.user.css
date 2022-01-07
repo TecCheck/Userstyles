@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      1.0.0
+@version      1.1.0
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -46,34 +46,34 @@
     }
 
     /* ## Selected Item */
-    .Mx7aus4bRGbU9vPpnDHj {
+    .moDRd9td0KtitPDzR7OJ {
         background: var(--color_background_dark);
     }
 
     /* ## Divider */
-    .Ygv7yuBKKU_w3MFCvNXr {
+    .cCPO3NculS0MYGNMH4_p {
         display: none;
     }
 
     /* ## Shadow */
-    .kYBlAcRblnjQ6kKW4JCy {
+    .GABF6hN5nVeGNtN8vb_q {
         display: none;
     }
 
     /* ## App Download Button */
-    ._5fRQsy_dn_0u38wC6Sb.bBxxnUCgRcYCaPw1sLYI {
+    .eNs6P3JYpf2LScgTDHc6.WvLkmOVB2R2vzI2ibR_r {
         display: none;
     }
 
 
     /* # Now playing bar */
-    .Root__now-playing-bar, ._82a78ff58d3fcba0cb9b8083fe6dd05c-scss {
+    .Root__now-playing-bar, .U05tnfKJjzV3lfrwRbLN {
         background: var(--color_background_dark);
         border: none;
     }
 
     /* ## Title Shadows */
-    ._mSbAWxlXgc2ONtpnuXQ::before, ._mSbAWxlXgc2ONtpnuXQ::after {
+    .eSMjmiD29Ox35O95waw6::before, .eSMjmiD29Ox35O95waw6::after {
         background: none;
     }
 
@@ -82,34 +82,39 @@
         background: none;
         border-top: none;
     }
-
+    
     /* ## Heart Button */
+    .control-button-heart[aria-checked="true"] {
+        color: var(--color_accent);
+    }
+
+    /* ## Heart Button (unused) */
     .a65d8d62fe56eed3e660b937a9be8a93-scss, .a65d8d62fe56eed3e660b937a9be8a93-scss:focus, .a65d8d62fe56eed3e660b937a9be8a93-scss:hover {
         color: var(--color_accent);
     }
 
     /* ## Shuffle Button */
-    .OSNOtcFz_LbegO1zggsb.K50_6MSlPqlOtlD7u5sB {
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW {
         color: var(--color_accent);
     }
 
     /* ### hover */
-    .OSNOtcFz_LbegO1zggsb.K50_6MSlPqlOtlD7u5sB:not([disabled]):focus, .OSNOtcFz_LbegO1zggsb.K50_6MSlPqlOtlD7u5sB:not([disabled]):hover {
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus, .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):hover, .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus:not(:focus-visible):not(:hover) {
         color: var(--color_accent);
     }
 
     /* ## Repeat Button */
-    .__1BGhJvHnvqYTPyG074.RuZx8jI6RbF6b0o9FcKW {
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS {
         color: var(--color_accent);
     }
 
     /* ### hover */
-    .__1BGhJvHnvqYTPyG074.RuZx8jI6RbF6b0o9FcKW:not([disabled]):focus, .__1BGhJvHnvqYTPyG074.RuZx8jI6RbF6b0o9FcKW:not([disabled]):hover {
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus, .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):hover, .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus:not(:focus-visible):not(:hover) {
         color: var(--color_accent);
     }
 
     /* ## Progress bar */
-    .nUQLDnMZ4D_pTkaeowQD {
+    .TywOcKZEqNynWecCiATc {
         --bg-color: #ffffff11;
         --fg-color: #b3b3b3;
         --is-active-fg-color: var(--color_accent);
@@ -121,41 +126,40 @@
     }
 
     /* ## Home View */
-
-    /* ### Top Gradient */
-    ._ZhbiHuTGHCAQ_asJSw9 {
-        display: none;
-    }
-
-    /* ### Sections Container */
-    .wFzewhu_BtILxlb2hsZ5 {
-        padding: 0;
-        grid-gap: 0px;
-    }
-
-    /* ### Top Section Header */
-    .KjREAf4amsU7qu_xBMFI {
-        margin: 24px 32px 0px 32px;
-    }
-
-    /* ### Top Section Layout */
-    .WR_hhqOgNl2oxWjFP6Ml {
+    /* ### Hove View Container */
+    .oIwmmWjK6Y3CrlINoPkD {
         padding: 0px;
     }
 
+    /* ### Top Gradient */
+    .vzMSLXDXM8yiYziBe_UK {
+        display: none;
+    }
+
+    /* ### Top Section Header */
+    .OMuRYOdpUbGif12_lRJl {
+        margin: 24px 32px 0px 32px;
+    }
+
+    /* ### Top Section Card Container */
+    .nlOU1unbFAd7ZHyeSMTH {
+        padding: 24px 32px 24px 32px;
+    }
+
     /* ### Top Section Cards */
-    .B0VIs50K6LXh5MDmmmJs .Uj0V012luMKoahlB4XpM {
+    .Z35BWOA10YGn5uc9YgAp .g3f_cI5usQX7ZOQyDtA9 {
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
 
-    .B0VIs50K6LXh5MDmmmJs .icV9eS36uZs9fhQmUujh {
+    /* #### Pictures */
+    .Z35BWOA10YGn5uc9YgAp .zXwER4Lsqq_e7fVVaPkZ {
         box-shadow: none;
         -webkit-box-shadow: none;
     }
 
     /* ### Section Layout */
-    .fA2cdlPjNZcA7PoilWIY {
+    ._fA2cdlPjNZcA7PoilWIY {
         padding: 0px;
     }
 
@@ -165,29 +169,29 @@
     }
 
     /* ### Section bodies */
-    .QNIdF86JU_1vh07jXsY2 {
+    .Z4InHgCs2uhk0MU93y_a {
         padding: 16px 32px 24px 32px;
     }
 
     /* ### Cards */
-    .YWQ6MaodStrAvAMCg1wx {
+    .LunqxlFIupJw_Dkx6mNx {
         border-radius: 16px;
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
 
-    .Z1sHXP1EI_v36FCALBRd {
+    .HkbHLcqgUfXruL5xVi28 {
         border-radius: 16px;
         background: var(--color_background_dark);
         box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
     }
 
     /* #### hover */
-    .YWQ6MaodStrAvAMCg1wx:hover {
+    .LunqxlFIupJw_Dkx6mNx:hover {
         background: var(--color_background_dark);
     }
 
-    .Z1sHXP1EI_v36FCALBRd:hover {
+    .HkbHLcqgUfXruL5xVi28:hover {
         background: var(--color_background_dark);
     }
 
@@ -207,9 +211,14 @@
     ._XX7ZgHsEhiQ3gO0kz5Q {
         background-image: linear-gradient(rgba(0,0,0,.5), var(--color_background));
     }
+    
+    /* ### Heart Button */
+    .rRF_r7EyCHjZv058JACi, .rRF_r7EyCHjZv058JACi:focus, .rRF_r7EyCHjZv058JACi:hover {
+        color: var(--color_accent);
+    }
 
     /* ### Table header */
-    ._jtsyLN4SfPrV5dZONPP.uwzZYE9AYS0OMBzvAopr {
+    .qJOhHoRcFhHJpEQ2CwFT.koyeY6AgGRPmyPITi7yO {
         background: var(--color_background_dark);
     }
 
@@ -219,30 +228,35 @@
     }
 
     /* ### Playing animation */
-    img.T3fCigGOfGm14iWbSHgX {
+    img.n5XwsUqagSoVk8oMiw1x {
         filter: saturate(0.4) hue-rotate(-40deg);
     }
 
     /* ### Playing title */
-    ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ .eyyspMJ_K_t8mHpLP_kP, ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ .zM1OMw7zDqUcaPz7XCa3 {
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX, .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .VpYFchIiPg3tPhBGyynT {
         color: var(--color_accent);
     }
 
     /* #### hover */
-    ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ:hover .eyyspMJ_K_t8mHpLP_kP, ._cx_B0JpuGl6cJE7YqU1.ggAaYdWWy1P_IcJbsMeZ:hover .zM1OMw7zDqUcaPz7XCa3 {
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .t_yrXoUO3qGsJS4Y6iXX, .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .VpYFchIiPg3tPhBGyynT {
+        color: var(--color_accent);
+    }
+    
+    /* #### focus-within */
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .t_yrXoUO3qGsJS4Y6iXX, .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .VpYFchIiPg3tPhBGyynT {
         color: var(--color_accent);
     }
 
     /* ## Artist View */
 
     /* ### Background */
-    .ojLwFoBNBM6cW7_RpeAN{
+    .iB16LxoPzDeVZo8zPhPQ{
         background: var(--color_background);
     }
 
     /* ### Top Gradient */
-    .We1fExPHxLIRmV0rZGNo {
-        background-image: linear-gradient(var(--color_background), var(--color_background));
+    .uebZpDr3EwDvpO0w6P9U {
+        background-image: linear-gradient(rgba(0,0,0,0.5), var(--color_background));
     }
 
     /* # Top bar */
@@ -251,17 +265,17 @@
     }
 
     /* ## Background Overlay */
-    .Hn_m1H5t0xMhZa46UHuC {
+    .T1xI1RTSFU7Wu94UuvE6 {
         display: none;
     }
 
     /* ## Play Button */
-    ._47lzH_9ZSVGM4UUdX90.tBo7WbUk9fgBuWpnsy0_ {
+    .IeLnf2wUHVKqxhzBcBoM.KOoUMuC7IxI_1Pi4r4m5 {
         background-color: var(--color_accent);
     }
 
     /* ## Upgrade Button */
-    .lilyiAOPw1BD7wToymZZ {
+    .Upqw01TOXETOmR5Td7Dj {
         display: none;
     }
 }
