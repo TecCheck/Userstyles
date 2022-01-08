@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      1.1.0
+@version      1.1.1
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -203,7 +203,7 @@
     /* ## Playlist View */
 
     /* ### Playlist Background */
-    ._5wXWalxnOyFQX7uHu_j {
+    .rezqw3Q4OEPB1m4rmwfw {
         background: var(--color_background);
     }
 
