@@ -2,13 +2,12 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      1.1.1
+@version      1.1.2
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
 @license      unlicense
 ==/UserStyle== */
-
 @-moz-document domain("open.spotify.com") {
 
     /* # Nav bar */
@@ -16,23 +15,97 @@
         background: var(--color_background);
     }
 
+    /* ## Nav bar container */
+    .tUwyjggD2n5KvEtP5z1B {
+        padding-top: 0px;
+    }
+
+    /* ## Spotify Logo container */
+    .NyIynkmMpZXSoaE3XGhA {
+        height: 64px;
+        background: var(--color_background_dark);
+        margin-bottom: 8px
+    }
+
+    .NyIynkmMpZXSoaE3XGhA .WJsKJXEbycxxq8OcGHM1 {
+        line-height: 0;
+        margin: auto;
+    }
+
     /* ## Spotify Logo */
     .logo .spotify-logo--text {
         color: var(--color_accent);
     }
 
+    /* ## Start, Search, Library */
+    .RSg3qFREWrqWCuUvDpJR {
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .RSg3qFREWrqWCuUvDpJR .eNs6P3JYpf2LScgTDHc6 .ATUzFKub89lzvkmvhpyE {
+        padding: 0;
+    }
+
+    .RSg3qFREWrqWCuUvDpJR .eNs6P3JYpf2LScgTDHc6 .ATUzFKub89lzvkmvhpyE span {
+        display: none;
+    }
+
+    /* ## Container for favs and add playlist button */
+    .EY6S7vlkxB7SF_OjjF_Y,
+    .LKgm9fCDTO7wqig_5U1q {
+        margin-top: 8px
+    }
+
     /* ## Add Playlist Button Icon */
-    .qQjVLTor_n_F9JTk0_5i {
-        border-radius: 50%;
+    .IKKDTlAtw1htuVSuLpLt,
+    .FMNZJaO_Zs9C_4inzm52,
+    .t6d9Hf7maqFPHp1Y02VR {
+        border-radius: 6px;
     }
 
-    /* ## Favourites Button Icon */
-    .U1Yw5UfcZ10iovn7gfK0 {
-        border-radius: 50%;
+    .q3ABXYJT9JZIzXOOtVuO {
+        background: var(--color_blue);
+        color: white;
+        border-radius: 16px;
     }
 
+    .DSoUBE7jhRw1l0iHfa_L, .Nd_DeCpszONzyaLe5Wd1 {
+        background: var(--color_magenta);
+        color: white;
+        border-radius: 16px;
+    }
+
+    /* ## Scrollbar handle */
+    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+        border-radius: 4px;
+        margin: 2px;
+    }
+
+    /*
+    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle::before {
+        left: 0px;
+        right: 0px;
+        background: rgba(255,255,255,.3);
+        border-radius: 4px;
+        margin: 2px;
+        width: 8px;
+    }
+    
+    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle:hover.os-scrollbar-handle::before {
+	    background: rgba(255,255,255,.5);
+    }
+    
+    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle,
+    .os-theme-spotify > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle.active, .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle.active,   
+    .os-theme-spotify > .os-scrollbar-horizontal > .os-scrollbar-track > .os-scrollbar-handle:hover, .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle:hover {
+        background: none;
+    }
+    */
     /* ## Que Button */
-    .control-button--active:not(.control-button--disabled):focus, .control-button--active:not(.control-button--disabled):hover {
+    .control-button--active:not(.control-button--disabled):focus,
+    .control-button--active:not(.control-button--disabled):hover {
         color: var(--color_accent);
     }
 
@@ -46,9 +119,11 @@
     }
 
     /* ## Selected Item */
+    /*
     .moDRd9td0KtitPDzR7OJ {
         background: var(--color_background_dark);
     }
+    */
 
     /* ## Divider */
     .cCPO3NculS0MYGNMH4_p {
@@ -56,7 +131,7 @@
     }
 
     /* ## Shadow */
-    .GABF6hN5nVeGNtN8vb_q {
+    .McwcCfBLSuXa5UDU1IMw {
         display: none;
     }
 
@@ -67,13 +142,15 @@
 
 
     /* # Now playing bar */
-    .Root__now-playing-bar, .U05tnfKJjzV3lfrwRbLN {
+    .Root__now-playing-bar,
+    .GD2gbRtcs5dOjMGAM_Y4 {
         background: var(--color_background_dark);
         border: none;
     }
 
     /* ## Title Shadows */
-    .eSMjmiD29Ox35O95waw6::before, .eSMjmiD29Ox35O95waw6::after {
+    .eSMjmiD29Ox35O95waw6::before,
+    .eSMjmiD29Ox35O95waw6::after {
         background: none;
     }
 
@@ -82,14 +159,16 @@
         background: none;
         border-top: none;
     }
-    
+
     /* ## Heart Button */
     .control-button-heart[aria-checked="true"] {
         color: var(--color_accent);
     }
 
     /* ## Heart Button (unused) */
-    .a65d8d62fe56eed3e660b937a9be8a93-scss, .a65d8d62fe56eed3e660b937a9be8a93-scss:focus, .a65d8d62fe56eed3e660b937a9be8a93-scss:hover {
+    .a65d8d62fe56eed3e660b937a9be8a93-scss,
+    .a65d8d62fe56eed3e660b937a9be8a93-scss:focus,
+    .a65d8d62fe56eed3e660b937a9be8a93-scss:hover {
         color: var(--color_accent);
     }
 
@@ -99,7 +178,9 @@
     }
 
     /* ### hover */
-    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus, .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):hover, .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus:not(:focus-visible):not(:hover) {
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus,
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):hover,
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus:not(:focus-visible):not(:hover) {
         color: var(--color_accent);
     }
 
@@ -109,7 +190,9 @@
     }
 
     /* ### hover */
-    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus, .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):hover, .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus:not(:focus-visible):not(:hover) {
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus,
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):hover,
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus:not(:focus-visible):not(:hover) {
         color: var(--color_accent);
     }
 
@@ -120,19 +203,42 @@
         --is-active-fg-color: var(--color_accent);
     }
 
+    /* ## Que button & Lyrics button */
+    .control-button--active {
+        color: var(--color_accent) !important;
+    }
+
+    /* ## Device list */
+    .connect-device-list-container::before {
+        border-top-color: var(--color_background_dark);
+    }
+
+    .connect-device-list-container {
+        background: var(--color_background_dark);
+        border-radius: 8px
+    }
+
+    /* ### More info button */
+    .pWY0RsrzxnQm9yHtovC8,
+    .pWY0RsrzxnQm9yHtovC8:active,
+    .pWY0RsrzxnQm9yHtovC8:focus,
+    .pWY0RsrzxnQm9yHtovC8:hover {
+        background: var(--color_accent);
+    }
+
     /* # Main View */
     .Root__main-view {
         background: var(--color_background);
     }
 
     /* ## Home View */
-    /* ### Hove View Container */
-    .oIwmmWjK6Y3CrlINoPkD {
+    /* ### Home View Container */
+    .ZYPWoTzgB8bUDbQRpbTr {
         padding: 0px;
     }
 
     /* ### Top Gradient */
-    .vzMSLXDXM8yiYziBe_UK {
+    .n87ifzfQlmGX8vkeYGDL {
         display: none;
     }
 
@@ -148,15 +254,39 @@
 
     /* ### Top Section Cards */
     .Z35BWOA10YGn5uc9YgAp .g3f_cI5usQX7ZOQyDtA9 {
-        background: var(--color_background_dark);
-        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+        border-radius: inherit;
+        background: none;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
     }
 
-    /* #### Pictures */
+    /* #### container */
+    .Z35BWOA10YGn5uc9YgAp {
+        border-radius: 16px;
+        background: var(--color_background_dark);
+    }
+
+    /* #### Image containers */
+    .Z35BWOA10YGn5uc9YgAp .zXwER4Lsqq_e7fVVaPkZ,
+    .Z35BWOA10YGn5uc9YgAp .jvWzgRWM_y_9FFTYRCcB {
+        border-radius: 0;
+        border-top-left-radius: inherit;
+        border-bottom-left-radius: inherit;
+        background: none;
+    }
+
+    /* #### Image */
+    [dir="ltr"] .Z35BWOA10YGn5uc9YgAp .WWDxafTPs4AgThdcX5jN,
     .Z35BWOA10YGn5uc9YgAp .zXwER4Lsqq_e7fVVaPkZ {
+        border-radius: inherit;
         box-shadow: none;
         -webkit-box-shadow: none;
     }
+
+    /* #### Text contaienr */
+    .Z35BWOA10YGn5uc9YgAp .Tzzq1pG_inwo_oSOdyjb {
+        border-radius: 0;
+    }
+
 
     /* ### Section Layout */
     ._fA2cdlPjNZcA7PoilWIY {
@@ -177,13 +307,13 @@
     .LunqxlFIupJw_Dkx6mNx {
         border-radius: 16px;
         background: var(--color_background_dark);
-        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
     }
 
     .HkbHLcqgUfXruL5xVi28 {
         border-radius: 16px;
         background: var(--color_background_dark);
-        box-shadow: 0 2px 4px -1px rgba(0,0,0,.2),0 4px 5px 0 rgba(0,0,0,.14),0 1px 10px 0 rgba(0,0,0,.12);
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
     }
 
     /* #### hover */
@@ -201,7 +331,6 @@
     }
 
     /* ## Playlist View */
-
     /* ### Playlist Background */
     .rezqw3Q4OEPB1m4rmwfw {
         background: var(--color_background);
@@ -209,11 +338,13 @@
 
     /* ### Top Gradient */
     ._XX7ZgHsEhiQ3gO0kz5Q {
-        background-image: linear-gradient(rgba(0,0,0,.5), var(--color_background));
+        background-image: linear-gradient(rgba(0, 0, 0, .5), var(--color_background));
     }
-    
+
     /* ### Heart Button */
-    .rRF_r7EyCHjZv058JACi, .rRF_r7EyCHjZv058JACi:focus, .rRF_r7EyCHjZv058JACi:hover {
+    .rRF_r7EyCHjZv058JACi,
+    .rRF_r7EyCHjZv058JACi:focus,
+    .rRF_r7EyCHjZv058JACi:hover {
         color: var(--color_accent);
     }
 
@@ -233,30 +364,32 @@
     }
 
     /* ### Playing title */
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX, .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .VpYFchIiPg3tPhBGyynT {
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX,
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .VpYFchIiPg3tPhBGyynT {
         color: var(--color_accent);
     }
 
     /* #### hover */
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .t_yrXoUO3qGsJS4Y6iXX, .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .VpYFchIiPg3tPhBGyynT {
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .t_yrXoUO3qGsJS4Y6iXX,
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .VpYFchIiPg3tPhBGyynT {
         color: var(--color_accent);
     }
-    
+
     /* #### focus-within */
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .t_yrXoUO3qGsJS4Y6iXX, .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .VpYFchIiPg3tPhBGyynT {
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .t_yrXoUO3qGsJS4Y6iXX,
+    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .VpYFchIiPg3tPhBGyynT {
         color: var(--color_accent);
     }
 
     /* ## Artist View */
-
     /* ### Background */
-    .iB16LxoPzDeVZo8zPhPQ{
+    .BL__GuO2JsHMR6RgNfwY {
         background: var(--color_background);
     }
 
     /* ### Top Gradient */
     .uebZpDr3EwDvpO0w6P9U {
-        background-image: linear-gradient(rgba(0,0,0,0.5), var(--color_background));
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), var(--color_background));
     }
 
     /* # Top bar */
@@ -269,13 +402,69 @@
         display: none;
     }
 
+    /* ## Back and Forth buttons */
+    .VgSbatGBB9XwTH2_dsxg .ql0zZd7giPXSnPg75NR0 {
+        background: none;
+    }
+
     /* ## Play Button */
-    .IeLnf2wUHVKqxhzBcBoM.KOoUMuC7IxI_1Pi4r4m5 {
+    .fpCtYO,
+    .gHYQaG {
         background-color: var(--color_accent);
+        color: var(--color_background_dark);
+    }
+
+    .jEaMNl:hover .ButtonInner-sc-14ud5tc-0 {
+        background-color: var(--color_accent);
+        color: var(--color_background_dark);
+    }
+
+    .iaAUvZ:hover .ButtonInner-sc-14ud5tc-0 {
+        background-color: var(--color_accent);
+        color: var(--color_background_dark);
+    }
+
+    /* ## Account button */
+    .odcjv30UQnjaTv4sylc0,
+    .odcjv30UQnjaTv4sylc0:hover,
+    .odcjv30UQnjaTv4sylc0:focus {
+        background: none;
     }
 
     /* ## Upgrade Button */
     .Upqw01TOXETOmR5Td7Dj {
         display: none;
+    }
+
+    /* # Popups */
+    .SboKmDrCTZng7t4EgNoM {
+        background: var(--color_background);
+    }
+
+    /* ## Added to playlist popup */
+    .hmqCvVdVEXlW52i3efqa {
+        background: var(--color_blue);
+    }
+
+    /* ## Delete playlist */
+    .K8PtC1Way9XetxDGwCGx {
+        background: var(--color_background);
+        color: var(--color_text);
+    }
+
+    .FjQhMth1iFGBpR5rKmk4 {
+        color: var(--color_text);
+    }
+
+    /* ## All Albums view */
+    /* ### Album header */
+    .fEvxx8vl3zTNWsuC8lpx {
+        background: var(--color_background_dark);
+    }
+
+    /* ### Top bar */
+    .EvQHNTBhaU3rGCRRlAWj.QplCuuGSoV4updqTSLq9 {
+        background-color: var(--color_background_dark);
+        border-bottom: none;
     }
 }
