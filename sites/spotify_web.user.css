@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      1.1.4
+@version      1.1.5
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -417,8 +417,8 @@
     }
 
     /* ## Play Button */
-    .fpCtYO,
-    .gHYQaG {
+    .dPQjiN,
+    .jYSKoa {
         background-color: var(--color_accent);
         color: var(--color_background_dark);
     }
