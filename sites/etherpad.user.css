@@ -1,0 +1,21 @@
+/* ==UserStyle==
+@name           Etherpad
+@namespace      https://github.com/TecCheck/Userstyles
+@version        1.0.0
+@description    Adapter style for etherpads
+@author         TecCheck
+@updateURL      https://github.com/TecCheck/Userstyles/raw/main/sites/etherpad.user.css
+@homepageURL    https://github.com/TecCheck/Userstyles
+==/UserStyle== */
+
+@-moz-document regexp("(.+zumpad.zum.de.+)|(.+etherpad.+)") {
+    :root {
+        --super-dark-color: white;
+        --dark-color: white;
+        --primary-color: var(--color_accent);
+        --middle-color: var(--color_background_dark);
+        --light-color: var(--color_background_dark);
+        --super-light-color: var(--color_background);
+        --text-color: var(--color_text);
+    }
+}
