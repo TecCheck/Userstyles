@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      2.0.0
+@version      3.0.0
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -10,25 +10,20 @@
 ==/UserStyle== */
 @-moz-document domain("open.spotify.com") {
 
-    /* # Common */
-    html {
-        background-color: var(--color_background_dark);
+    :root {
+        --scrollbar-vertical-size: 12px;
     }
     
     .encore-dark-theme, .encore-dark-theme .encore-base-set {
         --background-base: var(--color_background);
         --background-highlight: var(--color_background);
         --background-press: var(--color_background_dark);
-        --background-elevated-base: var(--color_background);
-        --background-elevated-highlight: var(--color_background);
-        --background-elevated-press: var(--color_background_dark);
         --text-base: var(--color_text);
         --text-bright-accent: var(--color_accent);
         --text-negative: var(--color_red);
         --text-warning: var(--color_yellow);
         --text-positive: var(--color_green);
         --text-announcement: var(--color_blue);
-        --essential-base: var(--color_text);
         --essential-bright-accent: var(--color_accent);
         --essential-negative: var(--color_red);
         --essential-warning: var(--color_yellow);
@@ -36,128 +31,55 @@
         --essential-announcement: var(--color_blue);
     }
     
-    .encore-dark-theme .encore-bright-accent-set {
-        --background-base: var(--color_accent);
-        --background-highlight: var(--color_accent);
-        --background-press: var(--color_accent);
-        --background-elevated-base: var(--color_accent);
-        --background-elevated-highlight: var(--color_accent);
-        --background-elevated-press: var(--color_accent);
-        --background-tinted-base: var(--color_accent);
-        --background-tinted-highlight: var(--color_accent);
-        --background-tinted-press: var(--color_accent);
-        --background-unsafe-for-small-text-base: var(--color_accent);
-        --background-unsafe-for-small-text-highlight: var(--color_accent);
-        --background-unsafe-for-small-text-press: var(--color_accent);
-        --decorative-subdued: var(--color_accent);
-    }
-    
-    /* ## Scrollbars */
-    :root {
-        --scrollbar-vertical-size: 12px;
-    }
-    
-    /* ### Scrollbar handle */
-    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
-        border-radius: 4px;
-    }
-    
-    /* ## Progress bar */
-    .TywOcKZEqNynWecCiATc {
-        --bg-color: #ffffff11;
-        --fg-color: #b3b3b3;
-        --is-active-fg-color: var(--color_accent);
-    }
-    
-    /* ## Control Buttons */
-    .control-button--active {
-        color: var(--color_accent);
-    }
-    
-    .control-button--active-dot::after {
-        background: var(--color_accent);
-    }
-    
-    /* ## Popups */
-    .SboKmDrCTZng7t4EgNoM {
+    /* # Nav bar */
+    .Root__nav-bar {
         background: var(--color_background);
     }
 
-    /* ### Added to playlist popup */
-    .hmqCvVdVEXlW52i3efqa {
-        background: var(--color_blue);
+    /* ## Nav bar container */
+    .tUwyjggD2n5KvEtP5z1B {
+        padding-top: 0px;
     }
 
-    /* ### Delete playlist */
-    .K8PtC1Way9XetxDGwCGx {
-        background: var(--color_background);
-        color: var(--color_text);
-    }
-
-    .FjQhMth1iFGBpR5rKmk4 {
-        color: var(--color_text);
-    }
-
-    .nav-alt .Root__top-container {
+    /* ## Spotify Logo container */
+    .NyIynkmMpZXSoaE3XGhA {
+        height: 64px;
         background: var(--color_background_dark);
+        margin-bottom: 8px
     }
-    
-    
-    
-    
-    /* # Top bar */
-    .Root__fixed-top-bar {
-        background-color: var(--color_background);
+
+    .NyIynkmMpZXSoaE3XGhA .WJsKJXEbycxxq8OcGHM1 {
+        line-height: 0;
+        margin: auto;
     }
-    
-    .eBrbJuUWgMoCkOgWs5uw {
-        height: 48px;
-    }
-    
+
     /* ## Spotify Logo */
-    .logo .spotify-logo {
+    .logo .spotify-logo--text {
         color: var(--color_accent);
-        width: 40px;
-        height: 40px;
     }
-    
-    /* ## Home button */
-    .J6VTd7VdGN2PM_oXCAyH, .J6VTd7VdGN2PM_oXCAyH:hover {
-        background-color: var(--color_background_dark);
-        width: 40px;
-        height: 40px;
+
+    /* ## Start, Search, Library */
+    .RSg3qFREWrqWCuUvDpJR {
+        padding: 0 16px;
+        display: flex;
+        justify-content: space-between;
     }
-    
-    /* ## Search bar */
-    .nav-alt .QO9loc33XC50mMRUCIvf, .nav-alt .QO9loc33XC50mMRUCIvf:hover {
-        background-color: var(--color_background_dark);
-        height: 40px;
+
+    .RSg3qFREWrqWCuUvDpJR .eNs6P3JYpf2LScgTDHc6 .ATUzFKub89lzvkmvhpyE {
+        padding: 0;
     }
-    
-    /* ## Upgrade Button */
-    .cuhCvm {
+
+    .RSg3qFREWrqWCuUvDpJR .eNs6P3JYpf2LScgTDHc6 .ATUzFKub89lzvkmvhpyE span {
         display: none;
     }
-    
-    /* ## Account button */
-    .odcjv30UQnjaTv4sylc0,
-    .odcjv30UQnjaTv4sylc0:hover,
-    .odcjv30UQnjaTv4sylc0:focus {
-        background: none;
-        margin-right: 8px;
-    }
-    
-    .tp8rO9vtqBGPLOhwcdYv, .tp8rO9vtqBGPLOhwcdYv div {
-        width: 40px !important;
-        height: 40px !important;
-    }
-    
-    
-    
-    
-    /* # Nav bar */
 
-    /* ## Add Playlist & Favourites Button Icon */
+    /* ## Container for favs and add playlist button */
+    .EY6S7vlkxB7SF_OjjF_Y,
+    .LKgm9fCDTO7wqig_5U1q {
+        margin-top: 8px
+    }
+
+    /* ## Add Playlist Button Icon */
     .IKKDTlAtw1htuVSuLpLt,
     .FMNZJaO_Zs9C_4inzm52,
     .t6d9Hf7maqFPHp1Y02VR {
@@ -175,12 +97,39 @@
         color: white;
         border-radius: 16px;
     }
-    
-    /* ## Currently playing icon */
-    .CCeu9OfWSwIAJqA49n84 {
-        color: var(--color_accent);
+   
+    /* ## Scrollbar handle */
+    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+        border-radius: 4px;
     }
     
+    /* ## Que Button */
+    .control-button--active:not(.control-button--disabled):focus,
+    .control-button--active:not(.control-button--disabled):hover {
+        color: var(--color_accent);
+    }
+
+    /* ## Control Buttons */
+    .control-button--active {
+        color: var(--color_accent);
+    }
+
+    .control-button--active-dot::after {
+        background: var(--color_accent);
+    }
+
+    /* ## Selected Item */
+    /*
+    .moDRd9td0KtitPDzR7OJ {
+        background: var(--color_background_dark);
+    }
+    */
+
+    /* ## Divider */
+    .cCPO3NculS0MYGNMH4_p {
+        display: none;
+    }
+
     /* ## Shadow */
     .McwcCfBLSuXa5UDU1IMw {
         display: none;
@@ -192,37 +141,66 @@
     }
 
 
-    
-    
     /* # Now playing bar */
+    .Root__now-playing-bar,
+    .GD2gbRtcs5dOjMGAM_Y4 {
+        background: var(--color_background_dark);
+        border: none;
+    }
+
+    /* ## Title Shadows */
+    .eSMjmiD29Ox35O95waw6::before,
+    .eSMjmiD29Ox35O95waw6::after {
+        background: none;
+    }
+
+    /* ## Background */
+    .O6evDj2xd8mSlS2qiPiG {
+        background: none;
+        border-top: none;
+    }
 
     /* ## Heart Button */
     .control-button-heart[aria-checked="true"] {
         color: var(--color_accent);
     }
 
+    /* ## Heart Button (unused) */
+    .a65d8d62fe56eed3e660b937a9be8a93-scss,
+    .a65d8d62fe56eed3e660b937a9be8a93-scss:focus,
+    .a65d8d62fe56eed3e660b937a9be8a93-scss:hover {
+        color: var(--color_accent);
+    }
+
     /* ## Shuffle Button */
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA {
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW {
         color: var(--color_accent);
     }
 
     /* ### hover */
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus,
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):hover,
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus:not(:focus-visible):not(:hover) {
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus,
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):hover,
+    .d4u88Fc9OM6kXh7FYYRj.pp1ooFGqFEUG5ucC6_KW:not([disabled]):focus:not(:focus-visible):not(:hover) {
         color: var(--color_accent);
     }
 
     /* ## Repeat Button */
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1 {
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS {
         color: var(--color_accent);
     }
 
     /* ### hover */
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus,
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):hover,
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus:not(:focus-visible):not(:hover) {
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus,
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):hover,
+    .bQY5A9SJfdFiEvBMM6J5.yKo7LWUCQCEALszRxAaS:not([disabled]):focus:not(:focus-visible):not(:hover) {
         color: var(--color_accent);
+    }
+
+    /* ## Progress bar */
+    .TywOcKZEqNynWecCiATc {
+        --bg-color: #ffffff11;
+        --fg-color: #b3b3b3;
+        --is-active-fg-color: var(--color_accent);
     }
 
     /* ## Que button & Lyrics button */
@@ -231,22 +209,13 @@
     }
 
     /* ## Device list */
-    .bk509U3ZhZc9YBJAmoPB {
-        --generic-tooltip-background-color: var(--color_background);
-        padding-bottom: 1px;
-        padding-top: 32px;
-        position: relative;
-        width: 320px;
+    .connect-device-list-container::before {
+        border-top-color: var(--color_background_dark);
     }
-    
-    /* ### Play animation */
-    .uWvwXlS0Da1bWsRX6KOw {
-        filter: saturate(0.4) hue-rotate(-40deg);
-    }
-    
-    /* ### Device not shown link */
-    .hcuLp8V4uEEfWZ4k6aLV {
-        background-color: var(--color_background_dark);
+
+    .connect-device-list-container {
+        background: var(--color_background_dark);
+        border-radius: 8px
     }
 
     /* ### More info button */
@@ -257,15 +226,14 @@
         background: var(--color_accent);
     }
 
-    
-    
-    
     /* # Main View */
+    .Root__main-view {
+        background: var(--color_background);
+    }
 
     /* ## Home View */
-    
     /* ### Home View Container */
-    .nav-alt .I3EivnXTjYMpSbPUiYEg {
+    .ZYPWoTzgB8bUDbQRpbTr {
         padding: 0px;
     }
 
@@ -304,11 +272,6 @@
         border-top-left-radius: inherit;
         border-bottom-left-radius: inherit;
         background: none;
-    }
-
-    /* #### Loading fallback image */
-    .g4PZpjkqEh5g7xDpCr2K {
-        background-color: var(--color_background_dark);
     }
 
     /* #### Image */
@@ -375,12 +338,6 @@
         transition: opacity 0.2s
     }
     
-    /* ## Library */
-    /* ### Selected tab */
-    .oaNVBli46GtVjaQKB15g {
-        background-color: var(--color_background_dark);
-    }
-    
     /* ## Playlist View */
     /* ### Playlist Background */
     .rezqw3Q4OEPB1m4rmwfw {
@@ -432,21 +389,91 @@
     .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .VpYFchIiPg3tPhBGyynT {
         color: var(--color_accent);
     }
-    
-    /* ## All Albums view */
-    /* ### Album header */
-    .fEvxx8vl3zTNWsuC8lpx {
+
+    /* ## Artist View */
+    /* ### Background */
+    .BL__GuO2JsHMR6RgNfwY {
         background: var(--color_background);
     }
 
-    /* ## Playlist header bar */
-    /* ### Background */
-    .T1xI1RTSFU7Wu94UuvE6 {
-        background-color: var(--color_background) !important;
+    /* ### Top Gradient */
+    .uebZpDr3EwDvpO0w6P9U {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), var(--color_background));
     }
-    
-    /* ### Background overlay */
-    .EvIR4O7jOSbNmxtMdIQ0 {
-        background-color: unset;
+
+    /* # Top bar */
+    .Root__top-bar {
+        background: var(--color_background_dark) !important;
+    }
+
+    /* ## Background Overlay */
+    .T1xI1RTSFU7Wu94UuvE6 {
+        display: none;
+    }
+
+    /* ## Back and Forth buttons */
+    .VgSbatGBB9XwTH2_dsxg .ql0zZd7giPXSnPg75NR0 {
+        background: none;
+    }
+
+    /* ## Play Button */
+    .dPQjiN,
+    .jYSKoa {
+        background-color: var(--color_accent);
+        color: var(--color_background_dark);
+    }
+
+    .jEaMNl:hover .ButtonInner-sc-14ud5tc-0 {
+        background-color: var(--color_accent);
+        color: var(--color_background_dark);
+    }
+
+    .iaAUvZ:hover .ButtonInner-sc-14ud5tc-0 {
+        background-color: var(--color_accent);
+        color: var(--color_background_dark);
+    }
+
+    /* ## Account button */
+    .odcjv30UQnjaTv4sylc0,
+    .odcjv30UQnjaTv4sylc0:hover,
+    .odcjv30UQnjaTv4sylc0:focus {
+        background: none;
+    }
+
+    /* ## Upgrade Button */
+    .Upqw01TOXETOmR5Td7Dj {
+        display: none;
+    }
+
+    /* # Popups */
+    .SboKmDrCTZng7t4EgNoM {
+        background: var(--color_background);
+    }
+
+    /* ## Added to playlist popup */
+    .hmqCvVdVEXlW52i3efqa {
+        background: var(--color_blue);
+    }
+
+    /* ## Delete playlist */
+    .K8PtC1Way9XetxDGwCGx {
+        background: var(--color_background);
+        color: var(--color_text);
+    }
+
+    .FjQhMth1iFGBpR5rKmk4 {
+        color: var(--color_text);
+    }
+
+    /* ## All Albums view */
+    /* ### Album header */
+    .fEvxx8vl3zTNWsuC8lpx {
+        background: var(--color_background_dark);
+    }
+
+    /* ### Top bar */
+    .EvQHNTBhaU3rGCRRlAWj.QplCuuGSoV4updqTSLq9 {
+        background-color: var(--color_background_dark);
+        border-bottom: none;
     }
 }
