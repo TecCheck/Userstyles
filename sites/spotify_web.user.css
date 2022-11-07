@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      3.0.0
+@version      3.0.1
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -29,6 +29,21 @@
         --essential-warning: var(--color_yellow);
         --essential-positive: var(--color_green);
         --essential-announcement: var(--color_blue);
+    }
+    
+    .encore-dark-theme .encore-bright-accent-set {
+        --background-base: var(--color_accent);
+        --background-highlight: var(--color_accent);
+        --background-press: var(--color_accent);
+        --background-elevated-base: var(--color_accent);
+        --background-elevated-highlight: var(--color_accent);
+        --background-elevated-press: var(--color_accent);
+        --background-tinted-base: var(--color_accent);
+        --background-tinted-highlight: var(--color_accent);
+        --background-tinted-press: var(--color_accent);
+        --background-unsafe-for-small-text-base: var(--color_accent);
+        --background-unsafe-for-small-text-highlight: var(--color_accent);
+        --background-unsafe-for-small-text-press: var(--color_accent);
     }
     
     /* # Nav bar */
