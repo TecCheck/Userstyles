@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      3.0.1
+@version      3.0.2
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -69,7 +69,7 @@
     }
 
     /* ## Spotify Logo */
-    .logo .spotify-logo--text {
+    .fwTMCeAaUoWDj9WcQbgy {
         color: var(--color_accent);
     }
 
