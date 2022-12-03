@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      3.0.2
+@version      3.0.3
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -149,6 +149,11 @@
     .McwcCfBLSuXa5UDU1IMw {
         display: none;
     }
+
+    /* ## Active playlist icon */
+    .CCeu9OfWSwIAJqA49n84 {
+        color: var(--color_accent);
+     }
 
     /* ## App Download Button */
     .Foyk_HJx16yh22JYmQ56 .eNs6P3JYpf2LScgTDHc6 {
