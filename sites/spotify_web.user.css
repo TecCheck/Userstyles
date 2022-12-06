@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      3.0.5
+@version      3.0.6
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -235,13 +235,12 @@
 
 
     /* ## Device list */
-    .connect-device-list-container::before {
-        border-top-color: var(--color_background_dark);
+    .bk509U3ZhZc9YBJAmoPB {
+        --generic-tooltip-background-color: var(--color_background_dark);
     }
-
-    .connect-device-list-container {
-        background: var(--color_background_dark);
-        border-radius: 8px
+    
+    .hcuLp8V4uEEfWZ4k6aLV {
+        background-color: var(--color_background);
     }
 
     /* ### More info button */
@@ -501,5 +500,29 @@
     .EvQHNTBhaU3rGCRRlAWj.QplCuuGSoV4updqTSLq9 {
         background-color: var(--color_background_dark);
         border-bottom: none;
+    }
+    
+    /* # Misc */
+    
+    /* ## Playlist edit dialog */
+    .PiyAiXdQULEnWAHP0tu1 {
+        background-color: var(--color_background);
+        color: var(--color_text);
+    }
+    
+    /* ### Text Field */
+    .f0GjZQZc4c_bKpqdyKbq:focus {
+        background: var(--color_background_dark);
+    }
+    
+    /* ## Edit profile dialog */
+    .XwNfIrI6_hCa_9_T2cQB {
+        background-color: var(--color_background);
+        color: var(--color_text);
+    }
+    
+    /* ### Text Field */
+    .oN9QVvJKEtdTH3HGfCu1:focus {
+        background: var(--color_background_dark);
     }
 }
