@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      3.0.4
+@version      3.0.5
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -224,9 +224,15 @@
     }
 
     /* ## Que button & Lyrics button */
-    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:hover, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:active, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:focus, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq::after {
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:hover, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:active, .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:focus {
         color: var(--color_accent) !important;
     }
+    
+    /* ### Dot */
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq::after {
+        background: var(--color_accent) !important;
+    }
+
 
     /* ## Device list */
     .connect-device-list-container::before {
