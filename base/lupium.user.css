@@ -1,0 +1,36 @@
+/* ==UserStyle==
+@name         Lupium base style
+@description  Lupium colors for my modular userstyles
+@namespace    .+
+@version      1.0.0
+@author       TecCheck
+@homepageURL  https://github.com/TecCheck/Userstyles
+@updateURL    https://raw.githubusercontent.com/TecCheck/Userstyles/main/base/lupium.user.css
+@license      unlicense
+@var color accentColor "Accent Color" #32ffa7
+@var color backgroundColor "Background Color" #1d2634
+@var color darkBackgroundColor "Dark Background Color" #151f2b
+@var color textColor "Text Color" #fafafa
+@var color red "Red" #ff4d64
+@var color green "Green" #32ffa7
+@var color yellow "Yellow" #d2ff4d
+@var color blue "Blue" #3260ff
+@var color magenta "Magenta" #d640ed
+@var color cyan "Cyan" #36e5e8
+==/UserStyle== */
+
+@-moz-document regexp(".+") {
+    :root {
+        --color_text: var(--textColor);
+        --color_background: var(--backgroundColor);
+        --color_background_dark: var(--darkBackgroundColor);
+        --color_accent: var(--accentColor);
+
+        --color_red: var(--red);
+        --color_green: var(--green);
+        --color_yellow: var(--yellow);
+        --color_blue: var(--blue);
+        --color_magenta: var(--magenta);
+        --color_cyan: var(--cyan);
+    }
+}
