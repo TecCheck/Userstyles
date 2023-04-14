@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      3.0.7
+@version      3.0.8
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -166,6 +166,10 @@
     .GD2gbRtcs5dOjMGAM_Y4 {
         background: var(--color_background_dark);
         border: none;
+    }
+    
+    .cover-art {
+        background-color: var(--color_background);
     }
 
     /* ## Title Shadows */
@@ -396,6 +400,11 @@
     img.n5XwsUqagSoVk8oMiw1x {
         filter: saturate(0.4) hue-rotate(-40deg);
     }
+    
+    /* ### Cover fallback background */
+    .rkw8BWQi3miXqtlJhKg0 {
+        background-color: var(--color_background);
+    }
 
     /* ### Playing title */
     .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX,
@@ -503,12 +512,12 @@
     }
     
     /* # Footer */
-    .joBbFt {
+    .eCtSle {
         background: var(--color_background);
     }
     
     /* ## Buttons */
-    .kXycaQ {
+    .fkMbeL {
         background: var(--color_background_dark);
     }
     
