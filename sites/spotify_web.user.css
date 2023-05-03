@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.0.0
+@version      4.0.1
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -100,6 +100,12 @@
 
     .nav-ylx .ZQftYELq0aOsg6tPbVbV {
         background: var(--color_background_dark);
+    }
+
+    /* Grid top padding fix */
+    .nav-ylx .ZQftYELq0aOsg6tPbVbV {
+        background: #000;
+        padding: calc(var(--panel-gap)/2) var(--panel-gap) var(--panel-gap);
     }
     
     
