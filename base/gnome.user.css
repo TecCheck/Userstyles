@@ -1,0 +1,33 @@
+/* ==UserStyle==
+@name           GNOME HIG Colors
+@namespace      github.com/TecCheck/Userstyles
+@version        1.0.0
+@description    GNOME HIG colors for my modular styles
+@author         TecCheck
+@var color accentColor "Accent Color" #3584E4
+@var color backgroundColor "Background Color" #242424
+@var color darkBackgroundColor "Dark Background Color" #1E1E1E
+@var color textColor "Text Color" #dcdfe4
+@var color red "Red" #e01b24
+@var color green "Green" #33d17a
+@var color yellow "Yellow" #f6d32d
+@var color blue "Blue" #3584e4
+@var color magenta "Magenta" #9141ac
+@var color cyan "Cyan" #56b6c2
+==/UserStyle== */
+
+@-moz-document regexp(".+") {
+    :root {
+        --color_text: var(--textColor);
+        --color_background: var(--backgroundColor);
+        --color_background_dark: var(--darkBackgroundColor);
+        --color_accent: var(--accentColor);
+
+        --color_red: var(--red);
+        --color_green: var(--green);
+        --color_yellow: var(--yellow);
+        --color_blue: var(--blue);
+        --color_magenta: var(--magenta);
+        --color_cyan: var(--cyan);
+    }
+}
