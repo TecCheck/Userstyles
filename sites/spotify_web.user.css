@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.0.2
+@version      4.0.3
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -137,7 +137,7 @@
     }
     
     /* # Entire Side Panel */
-    .Root__left-sidebar {
+    .Root__left-sidebar, .BdcvqBAid96FaHAmPYw_ {
         background: transparent;
     }
     
@@ -443,3 +443,4 @@
         background: var(--color_background_dark);
     }
 }
+
