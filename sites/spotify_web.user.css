@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.0.3
+@version      4.0.4
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -109,6 +109,9 @@
     
     
     /* # Top bar */
+    .PHgyArRLVFknlaOm31ID {
+	    grid-area: main-view/main-view/main-view/right-sidebar;
+    }
     
     /* ## Search bar */
     .nav-ylx .QO9loc33XC50mMRUCIvf, .nav-ylx .QO9loc33XC50mMRUCIvf:hover {
@@ -116,17 +119,17 @@
     }
     
     /* ## Upgrade Button */
-    .jbcotm {
+    .knqROz {
         display: none;
     }
     
     /* ## App Download Button */
-    .fzZvim {
+    .cabTyT {
         display: none;
     }
     
     /* ## Account button */
-    .drEYjZ, .drEYjZ:hover, .drEYjZ:focus-visible, .Fxnb0xe6bL7I7W8V0p6C:focus-visible, .Fxnb0xe6bL7I7W8V0p6C:hover, .Fxnb0xe6bL7I7W8V0p6C[data-context-menu-open="true"] {
+    .fXEXug, .fXEXug:hover, .fXEXug:focus-visible, .Fxnb0xe6bL7I7W8V0p6C:focus-visible, .Fxnb0xe6bL7I7W8V0p6C:hover, .Fxnb0xe6bL7I7W8V0p6C[data-context-menu-open="true"] {
         background: none !important;
         margin-right: 8px;
     }
@@ -409,7 +412,12 @@
         background: var(--color_background);
     }
 
-    /* ## Playlist header bar */
+    /* ## Playlist header bar */    
+    .nav-ylx .qJOhHoRcFhHJpEQ2CwFT.koyeY6AgGRPmyPITi7yO {
+        margin-right: -25px;
+        margin-left: -25px;
+    }
+    
     /* ### Background */
     .T1xI1RTSFU7Wu94UuvE6 {
         background-color: var(--color_background) !important;
@@ -443,4 +451,3 @@
         background: var(--color_background_dark);
     }
 }
-
