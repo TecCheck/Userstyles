@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.0.4
+@version      4.1.0
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -11,9 +11,10 @@
 @-moz-document domain("open.spotify.com") {
 
     /* # Common */
-    html {
+    html, .ZQftYELq0aOsg6tPbVbV {
         background-color: var(--color_background_dark);
     }
+
     
     .encore-dark-theme, .encore-dark-theme .encore-base-set {
         --background-base: var(--color_background);
@@ -238,7 +239,7 @@
     /* ## Home View */
     
     /* ### Home View Container */
-    .nav-alt .I3EivnXTjYMpSbPUiYEg {
+    .contentSpacing {
         padding: 0px;
     }
 
@@ -249,12 +250,12 @@
 
     /* ### Top Section Header */
     .OMuRYOdpUbGif12_lRJl {
-        margin: 24px 32px 0px 32px;
+        margin: 24px 24px 0px 24px;
     }
 
     /* ### Top Section Card Container */
     .nlOU1unbFAd7ZHyeSMTH {
-        padding: 24px 32px 24px 32px;
+        padding: 24px;
     }
 
     /* ### Top Section Cards */
@@ -310,7 +311,7 @@
 
     /* ### Section bodies */
     .Z4InHgCs2uhk0MU93y_a {
-        padding: 16px 32px 24px 32px;
+        padding: 16px 24px 24px 24px;
     }
 
     /* ### Cards */
@@ -429,7 +430,7 @@
     }
     
     /* # Footer */
-    .bRDuCh {
+    .cuLHaM {
         background-color: var(--color_background);
     }
     
