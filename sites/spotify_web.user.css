@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.1.1
+@version      4.1.2
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -120,12 +120,12 @@
     }
     
     /* ## Upgrade Button */
-    .knqROz {
+    .eLtwKe {
         display: none;
     }
     
     /* ## App Download Button */
-    .cabTyT {
+    .fvTMoO {
         display: none;
     }
     
@@ -452,3 +452,4 @@
         background: var(--color_background_dark);
     }
 }
+
