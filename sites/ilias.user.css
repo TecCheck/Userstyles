@@ -1,0 +1,14 @@
+/* ==UserStyle==
+@name           Ilias
+@namespace      https://github.com/TecCheck/Userstyles/
+@version        1.0.0
+@description    Ilias fixes
+@author         TecCheck
+==/UserStyle== */
+
+@-moz-document url-prefix("https://ilias.") {
+    .il-avatar.il-avatar-picture img {
+        width: -moz-available;
+        height: -moz-available;
+    }
+}
