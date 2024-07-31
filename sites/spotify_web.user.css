@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.2.0
+@version      4.3.0
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -61,8 +61,17 @@
     }
 
     /* ### Scrollbar handle */
-    .os-theme-spotify > .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+    .os-scrollbar-track > .os-scrollbar-handle {
         border-radius: 4px;
+        background: none;
+    }
+
+    /* ### Scrollbar handle */
+    .os-scrollbar-track > .os-scrollbar-handle:before {
+        border-radius: 4px;
+        width: 8px;
+        left: 2px;
+        background: var(--os-handle-bg);
     }
 
     /* ## Progress bar */
@@ -123,8 +132,8 @@
     }
 
     /* ## Upgrade Button */
-    .iJUiBm {
-        display: none;
+    .rwdnt1SmeRC_lhLVfIzg .iJUiBm {
+       display: none;
     }
 
     /* ## App Download Button */
@@ -145,8 +154,8 @@
 
     .tp8rO9vtqBGPLOhwcdYv,
     .tp8rO9vtqBGPLOhwcdYv div {
-        width: 40px !important;
-        height: 40px !important;
+        width: 32px !important;
+        height: 32px !important;
     }
 
     /* # Entire Side Panel */
@@ -166,72 +175,10 @@
         background-color: var(--color_background);
     }
 
-    /* ## Shadow */
-    .McwcCfBLSuXa5UDU1IMw {
-        display: none;
-    }
-
-
     /* # Now playing bar */
-    /* ## Heart Button */
-    .control-button-heart[aria-checked="true"] {
-        color: var(--color_accent);
-    }
-
-    /* ## Shuffle Button */
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA {
-        color: var(--color_accent);
-    }
-
-    /* ### hover */
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus,
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):hover,
-    .KVKoQ3u4JpKTvSSFtd6J.OF_3F0SQCsBtL1jSTlTA:not([disabled]):focus:not(:focus-visible):not(:hover) {
-        color: var(--color_accent);
-    }
-
-    /* ## Repeat Button */
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1 {
-        color: var(--color_accent);
-    }
-
-    /* ### hover */
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus,
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):hover,
-    .Vz6yjzttS0YlLcwrkoUR.tP0mccyU1WAa7I9PevC1:not([disabled]):focus:not(:focus-visible):not(:hover) {
-        color: var(--color_accent);
-    }
-
     /* ## Que button & Lyrics button */
     .control-button--active {
         color: var(--color_accent) !important;
-    }
-
-    /* ## Device list */
-    .bk509U3ZhZc9YBJAmoPB {
-        --generic-tooltip-background-color: var(--color_background);
-        padding-bottom: 1px;
-        padding-top: 32px;
-        position: relative;
-        width: 320px;
-    }
-
-    /* ### Play animation */
-    .uWvwXlS0Da1bWsRX6KOw {
-        filter: saturate(0.4) hue-rotate(-40deg);
-    }
-
-    /* ### Device not shown link */
-    .hcuLp8V4uEEfWZ4k6aLV {
-        background-color: var(--color_background_dark);
-    }
-
-    /* ### More info button */
-    .pWY0RsrzxnQm9yHtovC8,
-    .pWY0RsrzxnQm9yHtovC8:active,
-    .pWY0RsrzxnQm9yHtovC8:focus,
-    .pWY0RsrzxnQm9yHtovC8:hover {
-        background: var(--color_accent);
     }
 
     /* Lyrics and queue button */
@@ -250,7 +197,7 @@
     /* # Main View */
     /* ## Home View */
     /* ### Home View Container */
-    .I3EivnXTjYMpSbPUiYEg {
+    .Le0q6vXGEvilJEjOqgF9 {
         padding: 0px;
     }
 
@@ -260,8 +207,8 @@
     }
 
     /* ### Top Section Header */
-    .OMuRYOdpUbGif12_lRJl {
-        margin: 24px 24px 0px 24px;
+    .q8AZzDc_1BumBHZg0tZb {
+        margin: 0px 24px 0px 24px;
     }
 
     /* ### Top Section Card Container */
@@ -396,8 +343,8 @@
     }
 
     /* ### Playing animation */
-    img.n5XwsUqagSoVk8oMiw1x {
-        filter: saturate(0.0);
+    img.DZJJ5SCypi2mREbjy5bx {     
+        filter: grayscale(1);
     }
 
     /* ### Playing title */
@@ -441,7 +388,7 @@
     }
 
     /* # Footer */
-    .cuLHaM {
+    .jAQtcm {
         background-color: var(--color_background);
     }
 
@@ -453,7 +400,8 @@
 
     /* # Settings */
     /* ## Switch */
-    input:checked ~ .Js64TOfWtHksI6TQ6knT {
+    input:checked ~ .Js64TOfWtHksI6TQ6knT,
+    input:checked:hover:not([disabled], :active) ~ .Js64TOfWtHksI6TQ6knT {
         background-color: var(--color_accent);
     }
 
