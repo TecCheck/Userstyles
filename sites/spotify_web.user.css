@@ -2,7 +2,7 @@
 @name         Modular Spotify
 @description  Modular theme for Spotify Web
 @namespace    open.spotify.com
-@version      4.3.0
+@version      5.0.0
 @author       TecCheck
 @homepageURL  https://github.com/TecCheck/Userstyles
 @updateURL    https://github.com/TecCheck/Userstyles/raw/main/sites/spotify_web.user.css
@@ -15,7 +15,6 @@
     .ZQftYELq0aOsg6tPbVbV {
         background-color: var(--color_background_dark);
     }
-
 
     .encore-dark-theme,
     .encore-dark-theme .encore-base-set {
@@ -55,358 +54,53 @@
         --decorative-subdued: var(--color_accent);
     }
 
-    /* ## Scrollbars */
-    :root {
-        --scrollbar-vertical-size: 12px;
-    }
-
-    /* ### Scrollbar handle */
-    .os-scrollbar-track > .os-scrollbar-handle {
-        border-radius: 4px;
-        background: none;
-    }
-
-    /* ### Scrollbar handle */
-    .os-scrollbar-track > .os-scrollbar-handle:before {
-        border-radius: 4px;
-        width: 8px;
-        left: 2px;
-        background: var(--os-handle-bg);
-    }
-
     /* ## Progress bar */
     .TywOcKZEqNynWecCiATc {
-        --bg-color: #ffffff11;
-        --fg-color: #b3b3b3;
         --is-active-fg-color: var(--color_accent);
     }
-
-    /* ## Control Buttons */
-    .control-button--active {
-        color: var(--color_accent);
-    }
-
-    .control-button--active-dot::after {
-        background: var(--color_accent);
-    }
-
-    /* ## Popups */
-    .SboKmDrCTZng7t4EgNoM {
-        background: var(--color_background);
-    }
-
-    /* ### Added to playlist popup */
-    .hmqCvVdVEXlW52i3efqa {
-        background: var(--color_blue);
-    }
-
-    /* ### Delete playlist */
-    .K8PtC1Way9XetxDGwCGx {
-        background: var(--color_background);
-        color: var(--color_text);
-    }
-
-    .FjQhMth1iFGBpR5rKmk4 {
-        color: var(--color_text);
-    }
-
-    .nav-ylx .ZQftYELq0aOsg6tPbVbV {
-        background: var(--color_background_dark);
-    }
-
-    /* Grid top padding fix */
-    .nav-ylx .ZQftYELq0aOsg6tPbVbV {
-        padding: calc(var(--panel-gap)) var(--panel-gap) var(--panel-gap);
-    }
-
-
+    
     /* # Top bar */
-    .PHgyArRLVFknlaOm31ID {
-        grid-area: main-view/main-view/main-view/right-sidebar;
+    .wp7mZFPzV7Qmo51F0NA_ {
+        background: none;
     }
-
-    /* ## Search bar */
-    .nav-ylx .QO9loc33XC50mMRUCIvf,
-    .nav-ylx .QO9loc33XC50mMRUCIvf:hover {
-        background-color: var(--color_background_dark);
+    
+    /* # Library */
+    .BdcvqBAid96FaHAmPYw_ {
+        background: none;
     }
-
-    /* ## Upgrade Button */
-    .rwdnt1SmeRC_lhLVfIzg .iJUiBm {
-       display: none;
+    
+    /* # Main Panel */
+    
+    /* ## Playlist header */
+    .T1xI1RTSFU7Wu94UuvE6, .hIFR8WDm_54EEIa1gwpC {
+        background: var(--color_background) !important;
     }
-
-    /* ## App Download Button */
-    .heiitI {
+    
+    .EvIR4O7jOSbNmxtMdIQ0, .hIFR8WDm_54EEIa1gwpC.fIvMht6B9HdROywMNJZ4::after {
         display: none;
     }
-
-    /* ## Account button */
-    .fXEXug,
-    .fXEXug:hover,
-    .fXEXug:focus-visible,
-    .Fxnb0xe6bL7I7W8V0p6C:focus-visible,
-    .Fxnb0xe6bL7I7W8V0p6C:hover,
-    .Fxnb0xe6bL7I7W8V0p6C[data-context-menu-open="true"] {
-        background: none !important;
-        margin-right: 8px;
-    }
-
-    .tp8rO9vtqBGPLOhwcdYv,
-    .tp8rO9vtqBGPLOhwcdYv div {
-        width: 32px !important;
-        height: 32px !important;
-    }
-
-    /* # Entire Side Panel */
-    .Root__left-sidebar,
-    .BdcvqBAid96FaHAmPYw_ {
-        background: transparent;
-    }
-
-    /* # Nav bar */
-    .Root__nav-bar {
+    
+    /* ## Footer */    
+    .jAQtcm {
         background: none;
     }
 
-    /* Playlist image fallback background*/
-    .Ozitxbqs1vcOukDz3GDw,
-    .p6xU6jAgF1YQ43M1zZbV {
-        background-color: var(--color_background);
+    /* # Player */
+    /* ## Lyrics and info button */
+    .KAZD28usA1vPz5GVpm63.EHxL6K_6WWDlTCZP6x5w::after {
+        background-color: var(--text-bright-accent);
     }
 
-    /* # Now playing bar */
-    /* ## Que button & Lyrics button */
-    .control-button--active {
-        color: var(--color_accent) !important;
-    }
-
-    /* Lyrics and queue button */
     .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq,
     .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:focus,
     .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:hover,
-    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:hover:active {
-        color: var(--color_accent);
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:active:focus,
+    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq:active:hover{
+        color: var(--text-bright-accent);
     }
-
-    .KAZD28usA1vPz5GVpm63.RK45o6dbvO1mb0wQtSwq::after {
-        background: var(--color_accent);
-    }
-
-
-    /* # Main View */
-    /* ## Home View */
-    /* ### Home View Container */
-    .Le0q6vXGEvilJEjOqgF9 {
-        padding: 0px;
-    }
-
-    /* ### Top Gradient */
-    .n87ifzfQlmGX8vkeYGDL {
-        display: none;
-    }
-
-    /* ### Top Section Header */
-    .q8AZzDc_1BumBHZg0tZb {
-        margin: 0px 24px 0px 24px;
-    }
-
-    /* ### Top Section Card Container */
-    .nlOU1unbFAd7ZHyeSMTH {
-        padding: 24px;
-    }
-
-    /* ### Top Section Cards */
-    .Z35BWOA10YGn5uc9YgAp .g3f_cI5usQX7ZOQyDtA9 {
-        border-radius: inherit;
-        background: none;
-        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    }
-
-    /* #### container */
-    .Z35BWOA10YGn5uc9YgAp {
-        border-radius: 16px;
-        background: var(--color_background_dark);
-    }
-
-    /* #### Image containers */
-    .Z35BWOA10YGn5uc9YgAp .zXwER4Lsqq_e7fVVaPkZ,
-    .Z35BWOA10YGn5uc9YgAp .jvWzgRWM_y_9FFTYRCcB {
-        border-radius: 0;
-        border-top-left-radius: inherit;
-        border-bottom-left-radius: inherit;
-        background: none;
-    }
-
-    /* #### Loading fallback image */
-    .g4PZpjkqEh5g7xDpCr2K {
-        background-color: var(--color_background_dark);
-    }
-
-    /* #### Image */
-    [dir="ltr"] .Z35BWOA10YGn5uc9YgAp .WWDxafTPs4AgThdcX5jN,
-    .Z35BWOA10YGn5uc9YgAp .zXwER4Lsqq_e7fVVaPkZ {
-        border-radius: inherit;
-        box-shadow: none;
-        -webkit-box-shadow: none;
-    }
-
-    /* #### Text contaienr */
-    .Z35BWOA10YGn5uc9YgAp .Tzzq1pG_inwo_oSOdyjb {
-        border-radius: 0;
-    }
-
-
-    /* ### Section Layout */
-    ._fA2cdlPjNZcA7PoilWIY {
-        padding: 0px;
-    }
-
-    /* ### Section headers */
-    .RzpZ0LkZ0jXpxHUfv4kk .KjREAf4amsU7qu_xBMFI {
-        margin: 0px 32px;
-    }
-
-    /* ### Section bodies */
-    .Z4InHgCs2uhk0MU93y_a {
-        padding: 16px 24px 24px 24px;
-    }
-
-    /* ### Cards */
-    .LunqxlFIupJw_Dkx6mNx {
-        border-radius: 16px;
-        background: var(--color_background_dark);
-        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    }
-
-    .HkbHLcqgUfXruL5xVi28 {
-        border-radius: 16px;
-        background: var(--color_background_dark);
-        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, .2), 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12);
-    }
-
-    /* #### hover */
-    .LunqxlFIupJw_Dkx6mNx:hover {
-        background: var(--color_background_dark);
-    }
-
-    .HkbHLcqgUfXruL5xVi28:hover {
-        background: var(--color_background_dark);
-    }
-
-    /* ### Card Image */
-    ._EShSNaBK1wUIaZQFJJQ {
-        -webkit-box-shadow: 0 4px 24px rgba(0, 0, 0, .5);
-        box-shadow: 0 4px 24px rgba(0, 0, 0, .5);
-        border-radius: 6px;
-    }
-
-    /* Image edit overlay */
-    .Usk1cPR7qbn7RudRN3td {
-        border-radius: 6px;
-        transition: opacity 0.2s
-    }
-
-    /* ## Library */
-    /* ### Selected tab */
-    .oaNVBli46GtVjaQKB15g {
-        background-color: var(--color_background_dark);
-    }
-
-    /* ## Playlist View */
-    /* ### Playlist Background */
-    .rezqw3Q4OEPB1m4rmwfw {
-        background: var(--color_background);
-    }
-
-    /* ### Top Gradient */
-    .xYgjMpAjE5XT05aRIezb {
-        background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, .6))), var(--background-noise);
-        background: linear-gradient(transparent 0, rgba(0, 0, 0, .6) 100%), var(--background-noise);
-    }
-
-    /* ### Heart Button */
-    .SPC4uzYXJmknkCGKpxHw,
-    .SPC4uzYXJmknkCGKpxHw:focus,
-    .SPC4uzYXJmknkCGKpxHw:hover {
-        color: var(--color_accent);
-    }
-
-    /* ### Table header */
-    .qJOhHoRcFhHJpEQ2CwFT.koyeY6AgGRPmyPITi7yO {
-        background: var(--color_background);
-    }
-
-    /* ### Song row */
-    ._OpqIZJH2IqpNqAS9iJ7 {
-        border-radius: 8px;
-    }
-
-    /* ### Playing animation */
-    img.DZJJ5SCypi2mREbjy5bx {     
-        filter: grayscale(1);
-    }
-
-    /* ### Playing title */
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .t_yrXoUO3qGsJS4Y6iXX,
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl .VpYFchIiPg3tPhBGyynT {
-        color: var(--color_accent);
-    }
-
-    /* #### hover */
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .t_yrXoUO3qGsJS4Y6iXX,
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:hover .VpYFchIiPg3tPhBGyynT {
-        color: var(--color_accent);
-    }
-
-    /* #### focus-within */
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .t_yrXoUO3qGsJS4Y6iXX,
-    .h4HgbO_Uu1JYg5UGANeQ.iSbqnFdjb1SuyJ3uWydl:focus-within .VpYFchIiPg3tPhBGyynT {
-        color: var(--color_accent);
-    }
-
-    /* ## All Albums view */
-    /* ### Album header */
-    .fEvxx8vl3zTNWsuC8lpx {
-        background: var(--color_background);
-    }
-
-    /* ## Playlist header bar */
-    .nav-ylx .qJOhHoRcFhHJpEQ2CwFT.koyeY6AgGRPmyPITi7yO {
-        margin-right: -25px;
-        margin-left: -25px;
-    }
-
-    /* ### Background */
-    .T1xI1RTSFU7Wu94UuvE6 {
-        background-color: var(--color_background) !important;
-    }
-
-    /* ### Background overlay */
-    .EvIR4O7jOSbNmxtMdIQ0 {
-        background-color: unset;
-    }
-
-    /* # Footer */
-    .jAQtcm {
-        background-color: var(--color_background);
-    }
-
-    /* ## Buttons */
-    .csgzgk {
-        background-color: var(--color_background_dark);
-    }
-
-
-    /* # Settings */
-    /* ## Switch */
-    input:checked ~ .Js64TOfWtHksI6TQ6knT,
-    input:checked:hover:not([disabled], :active) ~ .Js64TOfWtHksI6TQ6knT {
-        background-color: var(--color_accent);
-    }
-
-    /* ## Language Dropdown */
-    .zrvvPyoxE6wQNqnu0yWA {
-        background: var(--color_background_dark);
+    
+    /* # Cleanup */
+    .VUXMMFKWudUWE1kIXZoS .Button-sc-qlcn5g-0 {
+        display:none;
     }
 }
